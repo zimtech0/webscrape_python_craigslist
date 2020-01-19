@@ -76,7 +76,7 @@ def findJobs():
     #finds all time tags that contain date time of post
         post_dates = soup.find("time", class_="result-date")
     #variable that passes date time info
-        post_datetime = post_dates['datetime']
+        #post_datetime = post_dates['datetime']
     #loops through titles
         number = 0
         for title in titles:
@@ -96,7 +96,7 @@ def findJobs():
           print(resultCount,number,jobTitle,title.text)
           number = number +1
     #prints date
-          print(postDate,post_datetime)
+          #print(postDate,post_datetime)
     #for link to live post
           print(postLink,title.get('href'))
     #print job decscription    
